@@ -1,0 +1,16 @@
+.sideber {
+    width: 30%;
+    margin: 10px 0 10px 0;
+    border-left: solid 1px #9a9a9a;
+}
+
+.content{
+    width:250px;
+    height:300px;
+    text-align:center;
+}
+
+
+article {
+  display:flex;
+}
