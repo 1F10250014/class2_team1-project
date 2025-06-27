@@ -3,6 +3,22 @@ html {
     scroll-padding-top: 160px;
 }
 
+h2 {
+    color: #c56c20;
+    border-bottom: 2px solid#fdeeb3;
+}
+
+a {
+    color: #c56c20;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.8;
+    background-color: #fdfaf6;
+    color: #5a4638;
+}
+
 #container {
     display: flex;
     flex-direction: row;
@@ -17,7 +33,7 @@ html {
 
 .content {
     width: 70%;
-    margin: 10px 0 10px 0;
+    padding: 40px;
 }
 
 .header {
@@ -34,22 +50,30 @@ html {
 }
 
 .header-title a {
-    font-family: var(--title-font);
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 10px 15px;
+    font-family: 'Noto Serif JP';
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 0;
 }
 
 .header ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: sans-serif;
-    line-height: 1.6;
+.header li a {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
 }
 
 table {
@@ -57,11 +81,14 @@ table {
     border-collapse: collapse;
     margin: 2em 0;
     font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th, td {
     border: 1px solid #ccc;
-    padding: 12px;
+    padding: 15px;
     text-align: left;
     vertical-align: top;
 }
@@ -73,14 +100,25 @@ th {
 }
 
 thead th {
+    background-color: #c56c20;
     text-align: center;
     font-size: 1.2rem;
 }
 
 strong {
-    color: #d35400;
+    color: #c56c20;
 }
 
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #e0d9cf;
+}
 
 /* アニメーション */
 .content-section {
