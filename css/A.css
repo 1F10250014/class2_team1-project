@@ -1,11 +1,12 @@
 html {
-  scroll-padding-top: 160px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 160px;
 }
 
 #container {
     display: flex;
     flex-direction: row;
-    padding-top: 8%; 
+    padding-top: 160px; 
 }
 
 .sidebar {
@@ -78,4 +79,18 @@ thead th {
 
 strong {
     color: #d35400;
+}
+
+
+/* アニメーション */
+.content-section {
+    margin-bottom: 120px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.content-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
