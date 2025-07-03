@@ -1,0 +1,79 @@
+body{
+    background-color: #FFF9F0
+}
+
+
+.header-title {
+    color :#ffffff;
+    background-color : #CD8147
+}
+
+
+.sidebar {
+  float: right;
+  width: 300px; 
+  background: #ffffff;
+  padding: 26px;
+  box-sizing: border-box;
+  font-weight: 500
+}
+
+.sidebar ul li {
+  margin-bottom: 2em;
+}
+
+.sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+a{
+    color : #58320a;
+}
+
+a.visited{
+    color : #CD8147
+}
+
+
+h2{
+    color : #58320a;
+    background-color: #FFCC99;  
+    padding-left: 4px;
+    border-left: solid 4px #CD8147;  
+}
+
+
+p{
+  font-size : 17px
+}
+
+
+.like-top{
+    font-weight : 500;
+    font-size : 19px
+}
+
+
+.trivia ul li {
+  margin-bottom: 1em;
+}
+
+.trivia-image {
+  display: flex;
+  gap: 1em;           
+  flex-wrap: wrap;    
+  justify-content: center;
+}
+
+.trivia-image figure {
+  margin: 0;
+  text-align: center;
+  width : 20%;
+}
+
+.trivia-image img {
+  max-width: 100%;
+  height: auto;
+}
+
