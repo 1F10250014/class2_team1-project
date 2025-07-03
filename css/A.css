@@ -1,3 +1,25 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100pxpx;
+}
+
+h2 {
+    color: #c56c20;
+    border-bottom: 2px solid#fdeeb3;
+}
+
+a {
+    color: #c56c20;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.8;
+    background-color: #fdf9ee;
+    color: #5a4638;
+    padding-top: 100px;
+}
+
 #container {
     display: flex;
     flex-direction: row;
@@ -11,22 +33,102 @@
 
 .content {
     width: 70%;
-    margin: 10px 0 10px 0;
+    padding: 40px;
 }
 
 .header {
+    background-color: rgb(253, 235, 184, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
     display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
 }
 
-.header-title {
-    flex-grow: 1;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 24px;
+.header-title a {
+    font-family: 'Noto Serif JP';
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 0;
 }
 
-.header-image {
-    width: 200px;
-    padding: 40px 20px;
+.header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header li a {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    width: 20%;
+}
+
+thead th {
+    background-color: #bc8759;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+strong {
+    color: #bc8759;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #e0d9cf;
+}
+
+/* アニメーション */
+.content-section {
+    margin-bottom: 120px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.content-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
