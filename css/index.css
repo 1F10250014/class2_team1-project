@@ -66,5 +66,10 @@ a{
     border-bottom: 2px solid#fdeeb3;
 }
 
-
-
+.footer_main {
+    border-top:solid 1px #b7b3b3;
+    font-size: 12px;
+    clear: both;
+    text-align: center;
+    background-color: #eeeeee;
+}
