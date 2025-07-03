@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 160px;
+    scroll-padding-top: 100pxpx;
 }
 
 h2 {
@@ -15,14 +15,14 @@ a {
 body {
     font-family: sans-serif;
     line-height: 1.8;
-    background-color: #fdfaf6;
+    background-color: #fdf9ee;
     color: #5a4638;
+    padding-top: 100px;
 }
 
 #container {
     display: flex;
     flex-direction: row;
-    padding-top: 160px; 
 }
 
 .sidebar {
@@ -100,13 +100,13 @@ th {
 }
 
 thead th {
-    background-color: #c56c20;
+    background-color: #bc8759;
     text-align: center;
     font-size: 1.2rem;
 }
 
 strong {
-    color: #c56c20;
+    color: #bc8759;
 }
 
 .sidebar ul {
