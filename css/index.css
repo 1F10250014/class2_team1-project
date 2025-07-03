@@ -8,9 +8,32 @@
 }
 
 .sidebar {
-    width: 30%;
-    margin: 10px 0 10px 0;
-    border-left: solid 1px #9a9a9a;
+    float: right;
+    width: 300px; 
+    background: #bc9b78;
+    padding: 26px;
+    box-sizing: border-box;
+    font-weight: 500
+}
+
+.sidebar ul{
+    list-style-type : none
+}
+
+.sidebar ul li {
+  margin-bottom: 2em;
+}
+
+.sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+
+a{
+    color : #fdeeb3
+}
+
+.side-hr{
+    border : 1px solid #fdf9ee
 }
 
 .content {
