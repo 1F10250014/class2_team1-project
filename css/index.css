@@ -13,11 +13,13 @@
     background: #bc9b78;
     padding: 26px;
     box-sizing: border-box;
-    font-weight: 500
+    font-weight: 500;
+    margin: 10px 0 10px 0;
 }
 
 .sidebar ul{
-    list-style-type : none
+    list-style: none;
+    padding: 0;
 }
 
 .sidebar ul li {
