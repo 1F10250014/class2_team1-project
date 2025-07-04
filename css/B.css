@@ -30,11 +30,12 @@ body {
   background-color: #ffffff;
 }
 
+
 .side {
   flex: 1;
   padding: 20px;
   background-color: #fefefe;
-  border-left: 1px solid #ccc;
+  border-left: 3px solid #ccc;
 }
 
 .side ul {
@@ -64,6 +65,22 @@ body {
   display: block;
   margin: 10px auto;
 }
+
+.kinds-container {
+  display: flex;
+  gap: 20px; /* 各項目の間隔 */
+  flex-wrap: wrap; /* 画面が狭いとき折り返す */
+  justify-content: space-around; /* 中央揃えなども可 */
+}
+
+.k1, .k2, .k3, .k4 {
+  flex: 1 1 200px; /* 最小200px、横幅は均等に分配 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 /*スマホ用*/
 @media screen and (max-width: 768px) {
   .article {
