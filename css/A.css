@@ -6,6 +6,8 @@ html {
 h2 {
     color: #c56c20;
     border-bottom: 2px solid#fdeeb3;
+    position: relative;
+    padding-bottom: 8px;
 }
 
 a {
@@ -48,6 +50,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .header-title a {
@@ -67,6 +70,8 @@ body {
 .header li a {
     padding: 10px 20px;
     font-size: 1rem;
+    position: relative;
+    text-decoration: none;
 }
 
 .content img {
@@ -115,10 +120,20 @@ strong {
     padding: 0;
 }
 
+.sidebar ul li {
+    text-align: center;
+    margin-bottom: 1em; 
+}
+
 .sidebar li a {
-    display: block;
+    display: inline-block;
     padding: 10px;
-    border-bottom: 1px solid #e0d9cf;
+}
+
+.content-section ul li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* アニメーション */
@@ -132,4 +147,91 @@ strong {
 .content-section.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.sidebar a:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #c56c20;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #ff8c00;
+  }
+  100% {
+    transform: scale(1);
+    color: #c56c20;
+  }
+}
+
+.content img {
+    transition: transform 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bc8759;
+    transition: width 0.5s ease-out;
+}
+
+.content-section.is-visible h2::after {
+    width: 100%;
+}
+
+table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: #fdf2e2;
+}
+
+.header.is-scrolled {
+    background-color: rgba(253, 235, 184, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section.is-visible ul li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.content-section.is-visible ul li:nth-child(2) {
+    transition-delay: 0.4s;
+}
+.content-section.is-visible ul li:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.content-section.is-visible ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.header li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #c56c20;
+    transition: width 0.3s ease;
+}
+
+.header li a:hover::after {
+    width: 100%;
 }
