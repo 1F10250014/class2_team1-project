@@ -1,16 +1,30 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #f6f5f4;
+  background-color: #F6FFF5;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  text-align: center;
+  text-align: center; 
   padding: 20px;
   background-color: #fff;
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 横方向に中央揃え */
+  gap: 20px;
+  background-color:#E4FFE0;
+  max-width: 800px; /* 中央寄せのための横幅制限（任意） */
+  margin: 0 auto; /* 親内で中央に配置 */
+}
+
+.header-inner img {
+  height: 80px;
+  width: auto;
+}
 .main_image img {
   max-width: 100%;
   height: auto;
@@ -64,6 +78,18 @@ body {
   height: auto;
   display: block;
   margin: 10px auto;
+}
+
+.what{
+  background-color: #E4FFE0;
+}
+
+.history{
+  background-color: #E4FFE0;
+}
+
+.kind{
+  background-color: #E4FFE0
 }
 
 .kinds-container {
