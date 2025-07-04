@@ -63,11 +63,6 @@ a{
     text-align: center;
 }
 
-.content > h2{
-    color: #c56c20;
-    border-bottom: 2px solid#fdeeb3;
-}
-
 .footer_main {
     border-top:solid 1px #b7b3b3;
     font-size: 12px;
@@ -87,7 +82,7 @@ a{
   }
 }
 
-.content > h2 {
+.content h2 {
     color: #c56c20;
     border-bottom: 2px solid#fdeeb3;
     position: relative;
@@ -95,7 +90,7 @@ a{
     overflow: hidden;
 }
 
-.content > h2::after {
+.content h2::after {
     content: '';
     position: absolute;
     bottom: -2px;
