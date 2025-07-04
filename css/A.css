@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100pxpx;
+    scroll-padding-top: 100px;
 }
 
 h2 {
@@ -26,7 +26,7 @@ body {
 }
 
 .sidebar {
-    width: 30%;
+    width: 300px;
     margin: 10px 0 10px 0;
     border-left: solid 1px #9a9a9a;
 }
